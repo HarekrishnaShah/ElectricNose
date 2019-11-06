@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>images/DekangLogo.bmp</file>
+        <file>images/HSUTDekang.bmp</file>
+        <file>images/HSUTDekang.png</file>
+        <file>images/backImg1.jpg</file>
+    </qresource>
+</RCC>
