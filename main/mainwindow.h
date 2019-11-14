@@ -22,6 +22,8 @@ private slots:
 
     void on_actAboutQt_triggered();
 
+    void on_actAnalyze_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

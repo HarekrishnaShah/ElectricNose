@@ -28,3 +28,8 @@ void MainWindow::on_actAboutQt_triggered()
 {
 
 }
+
+void MainWindow::on_actAnalyze_triggered()
+{
+
+}

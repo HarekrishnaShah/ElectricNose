@@ -116,7 +116,7 @@ class Ui_MainWindow(object):
         self.drawButton.setObjectName("drawButton")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(0, -2, 801, 421))
-        self.label.setAutoFillBackground(True)
+        self.label.setAutoFillBackground(False)
         self.label.setStyleSheet("border-image: url(:/icons/images/backImg1.jpg);")
         self.label.setText("")
         self.label.setObjectName("label")
@@ -147,9 +147,12 @@ class Ui_MainWindow(object):
         self.actAboutSys.setObjectName("actAboutSys")
         self.actAboutQt = QtWidgets.QAction(MainWindow)
         self.actAboutQt.setObjectName("actAboutQt")
+        self.actAnalyze = QtWidgets.QAction(MainWindow)
+        self.actAnalyze.setObjectName("actAnalyze")
         self.menu.addAction(self.actAboutSys)
         self.menu.addAction(self.actAboutQt)
         self.menu_2.addAction(self.actSer)
+        self.menu_2.addAction(self.actAnalyze)
         self.menubar.addAction(self.menu_2.menuAction())
         self.menubar.addAction(self.menu.menuAction())
 
@@ -196,5 +199,7 @@ class Ui_MainWindow(object):
         self.actAboutSys.setToolTip(_translate("MainWindow", "关于系统"))
         self.actAboutQt.setText(_translate("MainWindow", "关于Qt"))
         self.actAboutQt.setToolTip(_translate("MainWindow", "关于Qt"))
+        self.actAnalyze.setText(_translate("MainWindow", "数据分析"))
+        self.actAnalyze.setToolTip(_translate("MainWindow", "数据分析"))
 
 import res_rc

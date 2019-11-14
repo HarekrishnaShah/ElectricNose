@@ -360,7 +360,7 @@
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="styleSheet">
      <string notr="true">border-image: url(:/icons/images/backImg1.jpg);</string>
@@ -400,6 +400,7 @@
      <string>设置</string>
     </property>
     <addaction name="actSer"/>
+    <addaction name="actAnalyze"/>
    </widget>
    <addaction name="menu_2"/>
    <addaction name="menu"/>
@@ -427,6 +428,14 @@
    </property>
    <property name="toolTip">
     <string>关于Qt</string>
+   </property>
+  </action>
+  <action name="actAnalyze">
+   <property name="text">
+    <string>数据分析</string>
+   </property>
+   <property name="toolTip">
+    <string>数据分析</string>
    </property>
   </action>
  </widget>

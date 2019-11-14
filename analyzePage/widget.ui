@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>956</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数值检测</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>781</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>响应列表</string>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>741</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <row>
+     <property name="text">
+      <string>传感器1</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器2</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器3</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器4</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器5</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器6</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器7</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器8</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器9</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器10</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器11</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器12</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器13</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器14</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>传感器15</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>响应时间</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>峰值时间</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>峰值</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>最大正斜率</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>最大负斜率</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>稳态值</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>恢复时间</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>响应峰面积</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>恢复峰面积</string>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>50</y>
+     <width>111</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton">
+    <property name="text">
+     <string>Open Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="text">
+     <string>Analyze</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="text">
+     <string>Save Data</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

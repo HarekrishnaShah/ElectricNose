@@ -10,6 +10,8 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow,QActionGroup,
 from PyQt5.QtCore import   QTime, QTimer, QDir,QFile,QIODevice,QTextStream, pyqtSlot
 from ui_mainwindow import Ui_MainWindow
 from mySerSetting import QmySerSetting
+from myAnalysis import QmyAnalysis
+import numpy as np
 
 class GasManage(QMainWindow):
     def __init__(self, parent = None):
@@ -279,6 +281,53 @@ class GasManage(QMainWindow):
         if (ret == QDialog.Accepted):
             self.portNum, self.portBaudrate, self.portBytesize, self.portStopbits = settingDialog.getSer()
             #print(self.portNum + self.portBaudrate + self.portBytesize + self.portStopbits)
+    
+    # 数值分析
+    @pyqtSlot()
+    def on_actAnalyze_triggered(self):
+        analysisWidget = QmyAnalysis()
+        if self.ui.receiveText.toPlainText() != "":
+            #如果开启数值分析的时候，文本框不为空，则做数值分析后进行显示
+            text = self.ui.receiveText.toPlainText()
+            result = re.findall(r'\d* ', text)
+            result = list(map(int, result))
+
+            y = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+            for i in range(int(len(result) / 15)):
+                for j in range(15):
+                    y[j].append(result[i * 15 + j])
+
+            # 计算响应时间
+            tolTime = np.shape(y)[1]
+
+            # 计算峰值时间
+            maxTime = np.argmax(y, axis=1)
+
+            # 计算峰值
+            maxNum = np.max(y, axis=1)
+
+            # 计算最大正斜率
+
+            # 计算最大负斜率
+
+            # 计算稳态值
+            minNum = np.min(y, axis=1)
+
+            # 计算恢复时间
+            
+
+            # 计算响应峰面积
+
+            # 计算恢复峰面积
+
+
+            analysisWidget.setInit(tolTime, maxTime, maxNum, minNum)
+
+
+
+            
+        analysisWidget.exec()
+        
 
     # 关于系统        
     @pyqtSlot()
