@@ -205,13 +205,37 @@ class GasManage(QMainWindow):
                 sz = 2000 * (self.data_num_received_single / self.strNum)
                 self.__progressBar1.setValue(sz)
 
+                if self.ui.drawBox.isChecked():
+                    plt.ion()
+                    # 图表纵轴
+                    y = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], []]
+
+                    # 处理字符串
+                    text = self.ui.receiveText.toPlainText()
+                    result = re.findall(r'\d* ', text)
+                    result = list(map(int, result))
+
+                    for i in range(int(len(result) / 15)):
+                        for j in range(15):
+                            y[j].append(result[i * 15 + j])
+
+                    x = range(len(y[0]))
+                    plt.clf()
+
+                    plt.plot(x, y[0], x, y[1], x, y[2], x, y[3], x, y[4], x, y[5], x, y[6], x, y[7], x, y[8], x, y[9], x, y[10], x, y[11], x, y[12], x, y[13], x, y[14])
+                    plt.ioff()
+
+                
                 if self.data_num_received_single == self.strNum:
                     self.data_num_received_single = 0
                     self.__LabFile.setText("接收完毕")
 
+                    """
                     #开始绘图
                     if self.ui.drawBox.isChecked():
                         self.initPlot()
+                    """
+
 
         else:
             pass

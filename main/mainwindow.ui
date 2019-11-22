@@ -334,7 +334,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>录入完毕后绘制图像</string>
+     <string>实时绘制图像</string>
     </property>
    </widget>
    <widget class="QPushButton" name="drawButton">

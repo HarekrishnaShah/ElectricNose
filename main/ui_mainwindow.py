@@ -189,7 +189,7 @@ class Ui_MainWindow(object):
         self.recordEdit.setText(_translate("MainWindow", "0"))
         self.stateEdit.setText(_translate("MainWindow", "已搜索到串口"))
         self.saveButton.setText(_translate("MainWindow", "保存"))
-        self.drawBox.setText(_translate("MainWindow", "录入完毕后绘制图像"))
+        self.drawBox.setText(_translate("MainWindow", "实时绘制图像"))
         self.drawButton.setText(_translate("MainWindow", "绘图"))
         self.menu.setTitle(_translate("MainWindow", "帮助"))
         self.menu_2.setTitle(_translate("MainWindow", "设置"))
