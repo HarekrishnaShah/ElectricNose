@@ -330,12 +330,18 @@ class GasManage(QMainWindow):
             # 计算峰值
             maxNum = np.max(y, axis=1)
 
-            # 计算最大正斜率
-
-            # 计算最大负斜率
+            # 初始稳态值
+            firstNum = []
+            for i in range(15):
+                firstNum.append(y[i][0])
 
             # 计算稳态值
             minNum = np.min(y, axis=1)
+
+            # 计算峰值
+            difNum = []
+            for i in range(15):
+                difNum[i] = maxNum[i] - minNum[i]
 
             # 计算恢复时间
             
@@ -345,7 +351,7 @@ class GasManage(QMainWindow):
             # 计算恢复峰面积
 
 
-            analysisWidget.setInit(tolTime, maxTime, maxNum, minNum)
+            analysisWidget.setInit(tolTime, maxTime, maxNum, minNum, firstNum, difNum)
 
 
 

@@ -26,11 +26,11 @@ class QmyAnalysis(QDialog):
         # 保存按钮
         self.ui.saveButton.clicked.connect(self.data_save)
     
-    def setInit(self, tolTime, maxTime, maxNum, minNum):
+    def setInit(self, tolTime, maxTime, maxNum, minNum, firstNum, difNum):
         rowCount = self.ui.tableWidget.rowCount() #表格行数
-        self.__createItemsARow(rowCount, tolTime, maxTime, maxNum, 1, minNum, 1, 1, 1, 1)
+        self.__createItemsARow(rowCount, tolTime, maxTime, maxNum, firstNum, minNum, difNum, 1, 1, 1)
 
-    def __createItemsARow(self, rowCount, tolTime, maxTime, maxNum, maxGrad, minNum, minGrad, resTime, formSize, lateSize):
+    def __createItemsARow(self, rowCount, tolTime, maxTime, maxNum, firstNum, minNum, difNum, resTime, formSize, lateSize):
         for i in range(0, rowCount):
             item = QTableWidgetItem(str(tolTime), CellType.ctToltime.value)
             self.ui.tableWidget.setItem(i, 0, item)
@@ -41,13 +41,13 @@ class QmyAnalysis(QDialog):
             item = QTableWidgetItem(str(maxNum[i]), CellType.ctMaxnum.value)
             self.ui.tableWidget.setItem(i, 2, item)
 
-            item = QTableWidgetItem(str(maxGrad), CellType.ctMaxgrad.value) #没写好
+            item = QTableWidgetItem(str(firstNum[i]), CellType.ctMaxgrad.value) 
             self.ui.tableWidget.setItem(i, 3, item)
 
             item = QTableWidgetItem(str(minNum[i]), CellType.ctMinnum.value)
             self.ui.tableWidget.setItem(i, 4, item)
 
-            item = QTableWidgetItem(str(minGrad), CellType.ctMingrad.value) #没写好
+            item = QTableWidgetItem(str(difNum[i]), CellType.ctMingrad.value) 
             self.ui.tableWidget.setItem(i, 5, item)
 
             item = QTableWidgetItem(str(resTime), CellType.ctRestime.value) #没写好

@@ -124,22 +124,22 @@
     </column>
     <column>
      <property name="text">
-      <string>峰值</string>
+      <string>最大值</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>最大正斜率</string>
+      <string>初始稳态值</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>新建列</string>
+      <string>最小值</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>最大负斜率</string>
+      <string>峰值(Max-Min)</string>
      </property>
     </column>
     <column>
