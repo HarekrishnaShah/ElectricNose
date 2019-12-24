@@ -33,7 +33,7 @@ class GasManage(QMainWindow):
 
 
         # 默认的串口数据
-        self.portNum = 'COM5'
+        self.portNum = 'COM3'
         self.portBaudrate = '9600'
         self.portBytesize = '8'
         self.portParity = 'N'
@@ -341,7 +341,7 @@ class GasManage(QMainWindow):
             # 计算峰值
             difNum = []
             for i in range(15):
-                difNum[i] = maxNum[i] - minNum[i]
+                difNum.append(maxNum[i] - minNum[i])
 
             # 计算恢复时间
             
