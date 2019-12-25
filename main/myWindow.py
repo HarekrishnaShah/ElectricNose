@@ -324,7 +324,7 @@ class GasManage(QMainWindow):
             # 计算响应时间
             tolTime = np.shape(y)[1]
 
-            # 计算峰值时间
+            # 计算最大值时间
             maxTime = np.argmax(y, axis=1)
 
             # 计算峰值
@@ -343,7 +343,8 @@ class GasManage(QMainWindow):
             for i in range(15):
                 difNum.append(maxNum[i] - minNum[i])
 
-            # 计算恢复时间
+            # 计算最小值时间
+            minTime = np.argmin(y, axis=1)
             
 
             # 计算响应峰面积
@@ -351,7 +352,7 @@ class GasManage(QMainWindow):
             # 计算恢复峰面积
 
 
-            analysisWidget.setInit(tolTime, maxTime, maxNum, minNum, firstNum, difNum)
+            analysisWidget.setInit(tolTime, maxTime, maxNum, minNum, firstNum, difNum, minTime)
 
 
 

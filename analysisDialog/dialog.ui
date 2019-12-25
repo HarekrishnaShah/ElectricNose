@@ -119,7 +119,7 @@
     </column>
     <column>
      <property name="text">
-      <string>峰值时间</string>
+      <string>最大值时间</string>
      </property>
     </column>
     <column>
@@ -144,7 +144,7 @@
     </column>
     <column>
      <property name="text">
-      <string>恢复时间</string>
+      <string>最小值时间</string>
      </property>
     </column>
     <column>
